@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -8,8 +11,85 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Timer? _minuterie;
+  final Random _random = Random();
+
+  int _positionLapin = 0;
+  int _scoreBonk = 0;
+  int _scoreZloop = 0;
+
   @override
+  void initState() {
+    super.initState();
+    _nouvellePosition();
+  }
+
+  void dispose() {
+    _minuterie?.cancel();
+    super.dispose();
+  }
+
+  void _nouvellePosition() {
+    _minuterie?.cancel();
+
+    setState(() {
+      // Choisit un entier entre 0 et 4
+      _positionLapin = _random.nextInt(4);
+    });
+
+    // La fonction anonyme est appelée à toutes les secondes
+    _minuterie = Timer(const Duration(seconds: 1), () {
+      _nouvellePosition();
+    });
+  }
+
   Widget build(BuildContext context) {
-    return const Scaffold(body: const Center(child: Text('Tape le 🐇')));
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text('Tape le 🐇', style: TextStyle(fontSize: 40)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  'Bonk : $_scoreBonk',
+                  style: TextStyle(color: Colors.green, fontSize: 30),
+                ),
+                Text(
+                  'Zloop : $_scoreZloop',
+                  style: TextStyle(color: Colors.red, fontSize: 30),
+                ),
+              ],
+            ),
+            GridView.count(
+              shrinkWrap: true, // Dimensionner selon le contenu
+              physics: NeverScrollableScrollPhysics(), // Empêcher de scroller
+              crossAxisCount: 2, // Nombre de colonnes
+              mainAxisSpacing: 20, // Espacement vertical
+              crossAxisSpacing: 20, // Espacement horizontal
+              padding: EdgeInsets.all(20),
+              children: List.generate(4, (index) {
+                String emoji = _positionLapin == index ? "🐇" : "🐹";
+                return ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      if (index == _positionLapin) {
+                        _scoreBonk++;
+                      } else {
+                        _scoreZloop++;
+                      }
+                      _nouvellePosition();
+                    });
+                  },
+                  child: Text(emoji, style: TextStyle(fontSize: 100)),
+                );
+              }),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
