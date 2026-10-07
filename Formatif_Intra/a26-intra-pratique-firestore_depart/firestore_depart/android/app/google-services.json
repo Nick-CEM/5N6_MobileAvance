@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "967399935506",
+    "project_id": "test-72d0a",
+    "storage_bucket": "test-72d0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967399935506:android:ddb7f439a1ef736d9512cb",
+        "android_client_info": {
+          "package_name": "com.example.firebaseinit.flutterfirebaseinit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967399935506-fge86aq2f5t7c5korfm4mihsergnchv6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebaseinit.flutterfirebaseinit",
+            "certificate_hash": "e6829809331b04df5f230eb496b16abdc5187963"
+          }
+        },
+        {
+          "client_id": "967399935506-6r1s6k7a6nov64v5eugaud1g1asat2li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvoLEad8YL2OHcU7IiLb8JW5ttS6ZCRNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967399935506-6r1s6k7a6nov64v5eugaud1g1asat2li.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "967399935506-geldbdqa6lg2kosfmben11irfn9hditg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.deguet.test"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967399935506:android:c1d56e34ad988a919512cb",
+        "android_client_info": {
+          "package_name": "com.example.test_flutter_2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967399935506-0r93eqht5o8uvkgvee4ec96af4h39mmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.test_flutter_2022",
+            "certificate_hash": "e6829809331b04df5f230eb496b16abdc5187963"
+          }
+        },
+        {
+          "client_id": "967399935506-nfodvvno0nds7sh9vg5a98lod07o5eb2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.test_flutter_2022",
+            "certificate_hash": "c7ff2d0b1962045e433bd640f74a3a106e6ce589"
+          }
+        },
+        {
+          "client_id": "967399935506-6r1s6k7a6nov64v5eugaud1g1asat2li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvoLEad8YL2OHcU7IiLb8JW5ttS6ZCRNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967399935506-6r1s6k7a6nov64v5eugaud1g1asat2li.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "967399935506-geldbdqa6lg2kosfmben11irfn9hditg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.deguet.test"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967399935506:android:d11ad8dc418eba7a9512cb",
+        "android_client_info": {
+          "package_name": "org.depinfo.firestore_depart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967399935506-6r1s6k7a6nov64v5eugaud1g1asat2li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvoLEad8YL2OHcU7IiLb8JW5ttS6ZCRNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967399935506-6r1s6k7a6nov64v5eugaud1g1asat2li.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "967399935506-geldbdqa6lg2kosfmben11irfn9hditg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.deguet.test"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
